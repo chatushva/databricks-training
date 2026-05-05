@@ -101,3 +101,6 @@ SELECT MIN(salary) AS min_salary FROM Employee;
 SELECT department_id, COUNT(*) AS total_employees
 FROM Employee
 GROUP BY department_id;
+SELECT department_id, AVG(salary) AS avg_salary
+FROM Employee
+GROUP BY department_id;
