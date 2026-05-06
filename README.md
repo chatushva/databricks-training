@@ -1,29 +1,38 @@
+# 📊 Databricks Training – SQL Practice Repository
 
-# Week 1 - Day 1
+## 📌 Overview
 
-## Topics Covered
-- Basic SQL Queries
-- WHERE conditions
-- LIKE operator
-- Aggregate functions (SUM, AVG, COUNT)
-- GROUP BY and HAVING
-- ORDER BY
+This repository contains my hands-on SQL practice and learning during the Databricks Data Engineering Training Program.
 
-## Work Done
-- Created tables: Employee, Department, Project
-- Inserted sample data
-- Solved SQL queries from 1 to 30
+## 🎯 Objectives
 
-## Tools Used
-- DB Fiddle
-- GitHub
+* Learn SQL fundamentals
+* Practice real-world queries
+* Improve problem-solving skills
+* Maintain structured learning
 
-## Learnings
-- Understood SQL basics
-- Learned filtering using WHERE
-- Practiced GROUP BY and aggregation
-- Learned sorting using ORDER BY
+## 🛠️ Tools Used
 
-## Progress
-- Completed queries 1–30
-- Remaining queries will be completed next
+* SQL
+* DB Fiddle
+* GitHub
+
+## 📚 Topics Covered
+
+* SELECT & WHERE queries
+* String and date functions
+* Aggregate functions
+* GROUP BY & HAVING
+* Joins and relational queries
+
+## 🧠 What I Learned
+
+* Writing SQL queries
+* Filtering and grouping data
+* Using joins between tables
+* Working with aggregate functions
+* Organizing SQL practice effectively
+
+## 📌 Conclusion
+
+This repository helps me track my SQL learning progress and build a strong foundation in data engineering concepts.
