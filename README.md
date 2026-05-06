@@ -27,4 +27,3 @@
 ## Progress
 - Completed queries 1–30
 - Remaining queries will be completed next
-```
