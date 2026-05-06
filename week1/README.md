@@ -1,6 +1,5 @@
 
 # Week 1 - Day 1
-
 ## Topics Covered
 - Basic SQL Queries
 - WHERE conditions
@@ -12,7 +11,7 @@
 ## Work Done
 - Created tables: Employee, Department, Project
 - Inserted sample data
-- Solved SQL queries from 1 to 35
+- Solved SQL queries from 1 to 30
 
 ## Tools Used
 - DB Fiddle
@@ -24,11 +23,9 @@
 - Practiced GROUP BY and aggregation
 - Learned sorting using ORDER BY
 
-## Next Plan
-- Complete remaining queries (36–65)
-- Practice JOIN and Nested queries
+
 
 ## Progress
-- Completed queries 1–35
+- Completed queries 1–30
 - Remaining queries will be completed next
-```
+
