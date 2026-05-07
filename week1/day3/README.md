@@ -35,10 +35,6 @@ On Day 3, I continued practicing SQL with more complex queries. I focused on und
 * queries.sql → Contains all SQL queries
 * output.txt → Contains outputs of executed queries
 
-## 🔗 SQL Practice Link
-
-You can view my SQL queries and execution on DB Fiddle here:
-https://www.db-fiddle.com/f/ve5HarsKtequ3HSCh7Y1Za/4
 
 ## 🚀 Conclusion
 
