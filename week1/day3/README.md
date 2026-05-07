@@ -1,3 +1,45 @@
+# Week 1 - Day 3: Advanced SQL Practice
+
+## 📌 Overview
+
+On Day 3, I continued practicing SQL with more complex queries. I focused on understanding subqueries, joins, and solving problems that involve multiple conditions.
+
+## 🛠️ Tools Used
+
+* DB Fiddle for SQL execution
+* GitHub for maintaining my work
+
+## 📚 Topics Covered
+
+* Subqueries (nested queries)
+* Correlated queries
+* Advanced JOIN operations
+* Filtering using aggregated values
+* Combining multiple conditions
+
+## 🗂️ Work Done
+
+* Solved advanced SQL queries from the given question set
+* Practiced writing subqueries to solve real-world problems
+* Used joins and grouping together in queries
+
+## 📊 What I Learned Today
+
+* How to use subqueries inside SELECT and WHERE clauses
+* Difference between normal queries and correlated queries
+* How to compare values with aggregated results
+* Improved understanding of writing complex SQL queries
+
+## 📁 Files Included
+
+* queries.sql → Contains all SQL queries
+* output.txt → Contains outputs of executed queries
+
+## 🔗 SQL Practice Link
+
+You can view my SQL queries and execution on DB Fiddle here:
+https://www.db-fiddle.com/f/ve5HarsKtequ3HSCh7Y1Za/4
+
 ## 🚀 Conclusion
 
-Day 3 helped me improve my understanding of advanced SQL concepts like subqueries, joins, and aggregated filtering. I gained more confidence in writing and solving complex SQL queries using real-world scenarios.
+Day 3 helped me understand advanced SQL concepts and improved my confidence in solving complex query problems. 
