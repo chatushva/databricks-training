@@ -1,0 +1,129 @@
+**Schema (MySQL v5.7)**
+
+    CREATE TABLE employee_payments (
+    
+    emp_id INT PRIMARY KEY,
+    
+    emp_name VARCHAR(50),
+    
+    department VARCHAR(30),
+    
+    base_salary DECIMAL(10,2),
+    
+    bonus DECIMAL(10,2),
+    
+    joining_date DATE
+    
+    );
+    INSERT INTO employee_payments VALUES
+    
+    (1,'karthik','Data',75000.75,5000.50,'2019-03-15'),
+    
+    (2,'veena','HR',65000.40,4000.25,'2021-06-20'),
+    
+    (3,'ravi','Data',85000.90,6000.75,'2016-01-10'),
+    
+    (4,'anil','Finance',70000.10,NULL,'2020-09-01'),
+    
+    (5,'suresh','HR',60000.55,3000.30,'2022-11-25');
+    
+
+---
+
+**Query #1**
+
+    SELECT 
+        emp_name,
+        UPPER(emp_name) AS upper_case,
+        LOWER(emp_name) AS lower_case
+    FROM employee_payments;
+
+| emp_name | upper_case | lower_case |
+| -------- | ---------- | ---------- |
+| karthik  | KARTHIK    | karthik    |
+| veena    | VEENA      | veena      |
+| ravi     | RAVI       | ravi       |
+| anil     | ANIL       | anil       |
+| suresh   | SURESH     | suresh     |
+
+---
+**Query #2**
+
+    SELECT 
+        emp_name,
+        base_salary,
+        bonus,
+        base_salary + IFNULL(bonus,0) AS total_income
+    FROM employee_payments;
+
+| emp_name | base_salary | bonus   | total_income |
+| -------- | ----------- | ------- | ------------ |
+| karthik  | 75000.75    | 5000.5  | 80001.25     |
+| veena    | 65000.4     | 4000.25 | 69000.65     |
+| ravi     | 85000.9     | 6000.75 | 91001.65     |
+| anil     | 70000.1     |         | 70000.1      |
+| suresh   | 60000.55    | 3000.3  | 63000.85     |
+
+---
+**Query #3**
+
+    SELECT 
+        emp_name,
+        ROUND(base_salary + IFNULL(bonus,0)) AS total_income
+    FROM employee_payments;
+
+| emp_name | total_income |
+| -------- | ------------ |
+| karthik  | 80001        |
+| veena    | 69001        |
+| ravi     | 91002        |
+| anil     | 70000        |
+| suresh   | 63001        |
+
+---
+**Query #4**
+
+    SELECT 
+        emp_name,
+        YEAR(joining_date) AS joining_year
+    FROM employee_payments;
+
+| emp_name | joining_year |
+| -------- | ------------ |
+| karthik  | 2019         |
+| veena    | 2021         |
+| ravi     | 2016         |
+| anil     | 2020         |
+| suresh   | 2022         |
+
+---
+**Query #5**
+
+    SELECT 
+        emp_name,
+        joining_date,
+        TIMESTAMPDIFF(YEAR, joining_date, CURDATE()) AS experience,
+        
+        CASE
+            WHEN TIMESTAMPDIFF(YEAR, joining_date, CURDATE()) > 7 
+                THEN 'Senior'
+                
+            WHEN TIMESTAMPDIFF(YEAR, joining_date, CURDATE()) BETWEEN 4 AND 7 
+                THEN 'Mid'
+                
+            ELSE 'Junior'
+        END AS employee_level
+    
+    FROM employee_payments;
+
+| emp_name | joining_date | experience | employee_level |
+| -------- | ------------ | ---------- | -------------- |
+| karthik  | 2019-03-15   | 7          | Mid            |
+| veena    | 2021-06-20   | 4          | Mid            |
+| ravi     | 2016-01-10   | 10         | Senior         |
+| anil     | 2020-09-01   | 5          | Mid            |
+| suresh   | 2022-11-25   | 3          | Junior         |
+
+---
+
+[View on DB Fiddle](https://www.db-fiddle.com/)
